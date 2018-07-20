@@ -22,14 +22,6 @@ config :real_world, RealWorldWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
-config :real_world, RealWorld.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "real_world_dev",
-  hostname: "localhost",
-  pool_size: 10
-
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
