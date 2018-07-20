@@ -6,9 +6,9 @@ BUILD_HOST="45.33.63.117" # host where to build the release
 BUILD_USER="root" # local user at build host
 BUILD_AT="/tmp/edeliver/$APP/builds" # build directory on build host
 
-STAGING_HOSTS="45.33.63.117" # staging / test hosts separated by space
-STAGING_USER="root" # local user at staging hosts
-TEST_AT="/opt/real-world" # deploy directory on staging hosts. default is DELIVER_TO
+#STAGING_HOSTS="45.33.63.117" # staging / test hosts separated by space
+#STAGING_USER="root" # local user at staging hosts
+#TEST_AT="/opt/real-world" # deploy directory on staging hosts. default is DELIVER_TO
 
 PRODUCTION_HOSTS="45.33.63.117" # deploy / production hosts separated by space
 PRODUCTION_USER="root" # local user at deploy hosts
