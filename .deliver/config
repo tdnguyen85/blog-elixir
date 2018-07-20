@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-APP="real-world-app" # name of your release
+APP="real-world" # name of your release
 
 BUILD_HOST="45.33.63.117" # host where to build the release
 BUILD_USER="root" # local user at build host
-BUILD_AT="/tmp/erlang/real-world/builds" # build directory on build host
+BUILD_AT="/tmp/edeliver/$APP/builds" # build directory on build host
 
 STAGING_HOSTS="45.33.63.117" # staging / test hosts separated by space
 STAGING_USER="root" # local user at staging hosts

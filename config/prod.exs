@@ -15,12 +15,9 @@ use Mix.Config
 # which you typically run after static files are built.
 config :real_world, RealWorldWeb.Endpoint,
   on_init: {RealWorldWeb.Endpoint, :load_from_system_env, []},
-  http: [port: {:system, "PORT"}],
+  http: [port: 8888]
   url: [host: "localhost", port: {:system, "PORT"}],
-  cache_static_manifest: "priv/static/cache_manifest.json",
-  server: true,
-  root: ".",
-  version: Application.spec(:myapp, :vsn)
+  cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -55,7 +52,8 @@ config :logger, level: :info
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start the server for all endpoints:
 #
-#     config :phoenix, :serve_endpoints, true
+config :phoenix, :serve_endpoints, true
+
 #
 # Alternatively, you can configure exactly which server to
 # start per endpoint:
