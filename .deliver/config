@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-APP="real-world" # name of your release
+APP="real_world" # name of your release
 
 BUILD_HOST="45.33.63.117" # host where to build the release
 BUILD_USER="root" # local user at build host
