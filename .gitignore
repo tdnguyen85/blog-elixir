@@ -30,3 +30,4 @@ Thumbs.db
 
 # Documentation
 doc/
+.deliver/releases/

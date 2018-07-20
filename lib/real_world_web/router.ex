@@ -15,7 +15,7 @@ defmodule RealWorldWeb.Router do
     plug(Guardian.Plug.LoadResource, allow_blank: true)
   end
 
-  scope "/", RealWorldWeb do
+  scope "/api/", RealWorldWeb do
     pipe_through(:api)
 
     get("/articles/feed", ArticleController, :feed)

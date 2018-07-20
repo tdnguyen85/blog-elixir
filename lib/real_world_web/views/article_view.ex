@@ -34,6 +34,7 @@ defmodule RealWorldWeb.ArticleView do
       :updated_at
     ])
     |> Map.put(:author, UserView.render("author.json", user: article.author))
+    |> Map.put(:tag_list, [])
     |> FormatHelpers.camelize()
   end
 

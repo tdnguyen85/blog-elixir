@@ -22,6 +22,7 @@ defmodule RealWorld.Blog.Article do
 
     belongs_to(:author, User, foreign_key: :user_id)
     has_many(:favorites, Favorite)
+    has_many(:comments, RealWorld.Blog.Comment)
 
     timestamps(inserted_at: :created_at)
   end

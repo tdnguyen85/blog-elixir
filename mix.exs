@@ -26,7 +26,11 @@ defmodule RealWorld.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {RealWorld.Application, []}, extra_applications: [:logger, :runtime_tools, :comeonin]]
+    [
+      applications: [:edeliver],
+      mod: {RealWorld.Application, []},
+      extra_applications: [:logger, :runtime_tools, :comeonin]
+    ]
   end
 
   # Specifies which paths to compile per environment.
@@ -52,7 +56,10 @@ defmodule RealWorld.Mixfile do
       {:ex_machina, "~> 2.0", only: :test},
       {:ex_doc, "~> 0.16", only: :dev, runtime: false},
       {:plug, "~> 1.0"},
-      {:corsica, "~> 1.0"}
+      {:corsica, "~> 1.0"},
+      {:mogrify, "~> 0.6.1"},
+      {:edeliver, ">= 1.4.5"},
+      {:distillery, "~> 1.5", runtime: false}
     ]
   end
 
