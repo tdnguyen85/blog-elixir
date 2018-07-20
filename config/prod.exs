@@ -22,7 +22,7 @@ config :real_world, RealWorldWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
-config :real_world, RealWorldWeb.Repo,
+config :real_world, RealWorld.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
