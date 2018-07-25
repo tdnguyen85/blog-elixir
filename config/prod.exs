@@ -15,7 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :real_world, RealWorldWeb.Endpoint,
   on_init: {RealWorldWeb.Endpoint, :load_from_system_env, []},
-  http: [port: 8888],
+  http: [port: 4000],
   url: [host: "localhost", port: {:system, "PORT"}],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
