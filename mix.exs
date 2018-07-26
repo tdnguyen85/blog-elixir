@@ -27,7 +27,7 @@ defmodule RealWorld.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      applications: [:edeliver],
+      #applications: [:edeliver],
       mod: {RealWorld.Application, []},
       extra_applications: [:logger, :runtime_tools, :comeonin]
     ]
